@@ -1,4 +1,4 @@
-package com.mw.safetywifi.ui
+package com.mw.safetywifi.ui.home
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

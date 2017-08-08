@@ -40,6 +40,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
     testCompile 'junit:junit:4.12'
     kapt 'com.android.databinding:compiler:2.3.0'
+    compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.1'
 }
 repositories {
     mavenCentral()
