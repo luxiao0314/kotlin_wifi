@@ -31,7 +31,7 @@ interface ApiService {
     @GET("v1/guess/list")
     fun getGuessList(): Observable<BaseResponse<GuessListResponse>>
 
-    @GET("v1/other/list")
+    @GET("v1/others/list")
     fun getOtherList(): Observable<BaseResponse<OtherListResponse>>
 
     @GET("v1/comments/list")

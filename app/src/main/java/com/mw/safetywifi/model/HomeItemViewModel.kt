@@ -7,11 +7,11 @@ import com.mvvm.lux.framework.base.BaseViewModel
  * @Description
  * @Author luxiao418
  * @Email luxiao418@pingan.com.cn
- * @Date 07/08/2017 7:27 PM
+ * @Date 08/08/2017 4:38 PM
  * @Version
  */
-class MainViewModel : BaseViewModel() {
-
-    var text = ObservableField<String>("hello world")
-
+class HomeItemViewModel : BaseViewModel() {
+    var img = ObservableField<String>()
+    var title = ObservableField<String>()
+    var desc = ObservableField<String>()
 }

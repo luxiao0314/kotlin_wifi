@@ -9,6 +9,7 @@ import com.mw.safetywifi.R
 import com.mw.safetywifi.databinding.ActivityMainBinding
 import com.mw.safetywifi.model.MainViewModel
 import com.mw.safetywifi.ui.home.fragment.HomeFragment
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BindingActivity<ActivityMainBinding>() {
 
@@ -42,19 +43,13 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
     }
 
     override fun initView() {
-        mBinding.navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         menuManager = MenuManager.getInstance(supportFragmentManager)
         mContent = HomeFragment()
         supportFragmentManager.beginTransaction()
                 .add(R.id.content, mContent, MenuManager.MenuType.HOME.title)
                 .commit()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        val viewModel = MainViewModel()
-        viewModel.initData()
-        mBinding.viewModel = viewModel
+        mBinding.viewModel = MainViewModel()
     }
 
 }

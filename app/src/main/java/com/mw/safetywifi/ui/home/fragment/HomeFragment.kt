@@ -1,7 +1,9 @@
 package com.mw.safetywifi.ui.home.fragment
 
 import android.databinding.DataBindingUtil
+import android.support.v7.widget.GridLayoutManager
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import com.mvvm.lux.framework.base.BindingFragment
 import com.mw.safetywifi.R
@@ -22,7 +24,14 @@ class HomeFragment : BindingFragment<HomeFragmentBinding>() {
     }
 
     override fun initView() {
-        var viewModel = HomeViewModel()
+        val viewModel = HomeViewModel()
+        val headerView = View.inflate(activity, R.layout.home_header_view, null)
+        val footerView = View.inflate(activity, R.layout.home_footer_view, null)
+
+        viewModel.layoutManager = GridLayoutManager(activity, 2)
+        viewModel.footerView = footerView
+        viewModel.headerView = headerView
+        viewModel.initData(mBinding)
         mBinding.viewModel = viewModel
     }
 }

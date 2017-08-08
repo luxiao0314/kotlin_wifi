@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.mw.safetywifi.model.HomeViewModel"/>
+            type="com.mw.safetywifi.model.ShopViewModel"/>
     </data>
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:orientation="vertical">
         <android.support.v7.widget.RecyclerView
             android:padding="10dp"
-            android:id="@+id/rv_home"
+            android:id="@+id/rv_find"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="@{viewModel.layoutManager}"/>

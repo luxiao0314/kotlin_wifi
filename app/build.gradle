@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'//kapt3插件
 
 android {
@@ -14,12 +15,6 @@ android {
         versionCode globalConfiguration.versionCode
         versionName globalConfiguration.versionName
         multiDexEnabled true
-
-//        javaCompileOptions {
-//            annotationProcessorOptions {
-//                arguments = [moduleName: project.getName()]
-//            }
-//        }
     }
     buildTypes {
         release {
@@ -41,6 +36,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     kapt 'com.android.databinding:compiler:2.3.0'
     compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.1'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.0@aar'
 }
 repositories {
     mavenCentral()
