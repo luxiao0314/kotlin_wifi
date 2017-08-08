@@ -14,7 +14,13 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
     }
 
     override fun initView() {
+
+    }
+
+    override fun onResume() {
+        super.onResume()
         val viewModel = MainViewModel()
+        viewModel.initData()
         mBinding.viewModel = viewModel
     }
 

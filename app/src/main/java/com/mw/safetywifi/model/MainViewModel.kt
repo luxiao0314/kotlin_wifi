@@ -2,6 +2,12 @@ package com.mw.safetywifi.model
 
 import android.databinding.ObservableField
 import com.mvvm.lux.framework.base.BaseViewModel
+import com.mvvm.lux.framework.http.RxHelper
+import com.mvvm.lux.framework.http.RxSubscriber
+import com.mvvm.lux.framework.utils.Logger
+import com.mw.safetywifi.http.RetrofitHelper
+import com.mw.safetywifi.model.response.GuessListResponse
+import io.reactivex.annotations.NonNull
 
 /**
  * @Description
@@ -13,5 +19,16 @@ import com.mvvm.lux.framework.base.BaseViewModel
 class MainViewModel : BaseViewModel() {
 
     var text = ObservableField<String>("hello world")
+
+    fun initData() {
+        RetrofitHelper.init()
+                .getGuessList()
+                .compose(RxHelper.handleErrTransformer())
+                .subscribe(object : RxSubscriber<GuessListResponse>() {
+                    override fun onNext(@NonNull guessListResponse: GuessListResponse) {
+                        Logger.d(guessListResponse.list[0].desc)
+                    }
+                })
+    }
 
 }
