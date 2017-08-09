@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/main_color">
+
+    <RelativeLayout
+        android:id="@+id/cus_title_view_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/cus_title_view_label"
+            style="@style/title_style"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/cus_title_view_back_img"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <RelativeLayout
+            android:id="@+id/cus_title_view_right_rl"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+
+            <TextView
+                android:id="@+id/cus_title_view_num_tip"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/cus_title_view_right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:src="@drawable/ic_search" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cus_title_view_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
