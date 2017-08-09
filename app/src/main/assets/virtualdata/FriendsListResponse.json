@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "message": null,
+  "data": {
+    "list": [
+      {
+        "id": 9,
+        "version": 0,
+        "title": "快乐柠檬",
+        "desc": "快乐柠檬十年之味,经典半价!更有激萌公仔等你领回家!",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/happylemon.png"
+      },
+      {
+        "id": 10,
+        "version": 0,
+        "title": "星巴克",
+        "desc": "星巴克的隐藏菜单又更新!来,请给我上一杯少女心!",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/starbucks.png"
+      },
+      {
+        "id": 11,
+        "version": 0,
+        "title": "酷圣石",
+        "desc": "酷圣石冰淇淋满88立减30,好吃到停不下来",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/coldstone.png"
+      },
+      {
+        "id": 12,
+        "version": 0,
+        "title": "广州蕉叶",
+        "desc": "广州蕉叶新升级,情迷泰国色香味",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/jiaoye.png"
+      },
+      {
+        "id": 13,
+        "version": 0,
+        "title": "巴黎贝甜",
+        "desc": "典型的韩式风格、看着很简单蛋糕却很是漂亮!",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/parisbaguette.png"
+      },
+      {
+        "id": 9,
+        "version": 0,
+        "title": "快乐柠檬",
+        "desc": "快乐柠檬十年之味,经典半价!更有激萌公仔等你领回家!",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/happylemon.png"
+      },
+      {
+        "id": 10,
+        "version": 0,
+        "title": "星巴克",
+        "desc": "星巴克的隐藏菜单又更新!来,请给我上一杯少女心!",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/starbucks.png"
+      },
+      {
+        "id": 11,
+        "version": 0,
+        "title": "酷圣石",
+        "desc": "酷圣石冰淇淋满88立减30,好吃到停不下来",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/coldstone.png"
+      },
+      {
+        "id": 12,
+        "version": 0,
+        "title": "广州蕉叶",
+        "desc": "广州蕉叶新升级,情迷泰国色香味",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/jiaoye.png"
+      },
+      {
+        "id": 13,
+        "version": 0,
+        "title": "巴黎贝甜",
+        "desc": "典型的韩式风格、看着很简单蛋糕却很是漂亮!",
+        "img": "http://7xipk4.com1.z0.glb.clouddn.com/parisbaguette.png"
+      }
+    ]
+  }
+}

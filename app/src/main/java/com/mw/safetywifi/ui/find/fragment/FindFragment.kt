@@ -2,8 +2,6 @@ package com.mw.safetywifi.ui.find.fragment
 
 import android.databinding.DataBindingUtil
 import android.support.v4.app.Fragment
-import android.support.v4.view.ViewPager
-import android.support.v4.view.ViewPager.OnPageChangeListener
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.mvvm.lux.framework.base.BindingFragment
@@ -28,7 +26,7 @@ class FindFragment : BindingFragment<FindFragmentBinding>() {
     override fun initView() {
         val list = ArrayList<Fragment>()
         list.add(ShopFragment())
-        list.add(StoreFragment())
+        list.add(FriendFragment())
         mBinding.viewpager.adapter = FindPageAdapter(fragmentManager, list)
         mBinding.tablayout.setViewPager(mBinding.viewpager)
         val viewModel = FindViewModel()

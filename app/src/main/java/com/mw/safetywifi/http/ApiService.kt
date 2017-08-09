@@ -1,10 +1,7 @@
 package com.mw.safetywifi.http
 
 import com.mvvm.lux.framework.http.base.BaseResponse
-import com.mw.safetywifi.model.response.CommentsListResponse
-import com.mw.safetywifi.model.response.GuessListResponse
-import com.mw.safetywifi.model.response.OtherListResponse
-import com.mw.safetywifi.model.response.UserListResponse
+import com.mw.safetywifi.model.response.*
 import io.reactivex.Observable
 import retrofit2.http.GET
 
@@ -36,5 +33,8 @@ interface ApiService {
 
     @GET("v1/comments/list")
     fun getCommentsList(): Observable<BaseResponse<CommentsListResponse>>
+
+    @GET("v1/friend/list")
+    fun getFriendList(): Observable<FriendsListResponse>
 
 }

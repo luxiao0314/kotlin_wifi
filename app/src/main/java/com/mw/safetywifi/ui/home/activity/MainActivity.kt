@@ -48,8 +48,6 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
     }
 
     override fun initView() {
-        setupToolbar(toolbar,"首页")
-
         navigation.enableAnimation(false)
         navigation.enableShiftingMode(false)
         navigation.enableItemShiftingMode(false)

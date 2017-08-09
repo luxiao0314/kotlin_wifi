@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import com.mw.safetywifi.R
 import com.mw.safetywifi.ui.find.fragment.FindFragment
-import com.mw.safetywifi.ui.home.fragment.MessageFragment
+import com.mw.safetywifi.ui.message.fragment.MessageFragment
 import com.mw.safetywifi.ui.home.fragment.MineFragment
 
 /**
