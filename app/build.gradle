@@ -28,7 +28,7 @@ android {
 }
 
 dependencies {
-    compile project(':framework')
+//    compile project(':framework')
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     compile viewDependencies.multidex
