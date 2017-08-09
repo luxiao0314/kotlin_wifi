@@ -3,9 +3,13 @@
                 android:id="@+id/rl_footer_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/default_bg"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/other_view_bg"
                 android:orientation="horizontal"
-                android:padding="5dp">
+                android:padding="12dp">
 
     <TextView
         android:id="@+id/tv_other"
@@ -32,6 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_back"/>
+        android:src="@drawable/ic_arrow_down"/>
 
 </RelativeLayout>

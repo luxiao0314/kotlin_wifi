@@ -8,15 +8,11 @@
             name="viewModel"
             type="com.mw.safetywifi.model.HomeViewModel"/>
     </data>
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/rv_home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <android.support.v7.widget.RecyclerView
-            android:padding="10dp"
-            android:id="@+id/rv_home"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layoutManager="@{viewModel.layoutManager}"/>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layoutManager="@{viewModel.layoutManager}"/>
 </layout>

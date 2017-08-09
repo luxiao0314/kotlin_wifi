@@ -11,26 +11,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:padding="5dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_margin="10dp"
             android:layout_width="115dp"
-            android:layout_height="match_parent"
-            app:img="@{viewModel.img}"/>
+            android:layout_height="85dp"
+            app:roundImg="@{viewModel.img}"/>
 
         <RelativeLayout
-            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
                 android:text="@{viewModel.title}"
                 android:textColor="@color/black_191919"
                 android:textSize="15sp"/>
@@ -41,9 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_title"
                 android:layout_marginBottom="10dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
+                android:maxLines="1"
                 android:text="@{viewModel.desc}"
                 android:textSize="12sp"/>
 
@@ -52,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="1.5km"
+                android:text="10分钟前"
                 android:textSize="9sp"/>
 
             <TextView
@@ -73,11 +68,5 @@
                 android:text="2698"
                 android:textSize="9sp"/>
         </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/white_30"/>
-
     </LinearLayout>
 </layout>
